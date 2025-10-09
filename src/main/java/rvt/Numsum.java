@@ -1,0 +1,28 @@
+package rvt;
+import java.util.Scanner;
+
+public class Numsum {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        int count = 0;
+        int sum = 0;
+
+        while(true) {
+            System.out.println("Give a number: ");
+            int number = scanner.nextInt();
+
+            if (number == 0) {
+                break;
+        }
+
+            sum += number;
+            count++;
+    
+        }
+
+    System.out.println("Number of numbers: " + count);
+    System.out.println("Sum of numbers: " + sum);
+
+    }
+}
