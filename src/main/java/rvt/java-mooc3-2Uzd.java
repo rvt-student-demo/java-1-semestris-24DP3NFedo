@@ -1,6 +1,6 @@
 package rvt;
-import java.util.Scanner;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 class OnlyTheseNumbers {
     public static void main(String[] args) {
@@ -25,5 +25,23 @@ class OnlyTheseNumbers {
         for (int i = start; i <= end; i++) {
             System.out.println(numbers.get(i));
         }
+    }
+}
+
+class ListSize {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList<String> numbers = new ArrayList<>();
+
+        while (true) {
+            String input = scanner.nextLine();
+
+            if (input.isEmpty()) {
+                break;
+            }
+
+            list.add(input);
+        }
+        System.out.println("In total: " + list.size());
     }
 }
