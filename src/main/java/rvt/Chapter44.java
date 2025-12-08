@@ -2,7 +2,7 @@ package rvt;
 
 import java.util.Scanner;
 
-public class Chapter44 {
+class nameEcho {
     public static void nameEcho(Scanner in) {
         System.out.print("Enter your name: ");
         String name = in.nextLine().trim();
@@ -13,5 +13,16 @@ public class Chapter44 {
         String last = name.substring(1);
 
         System.out.println(first + " " + last.toUpperCase());
+    }
+}
+
+class chartAt {
+    public static void nameEcho(Scanner in) {
+        System.out.print("Enter a string: ");
+        String s = in.nextLine();
+
+        for (int i = 0; i < s.length(); i++) {
+            System.out.println(s.charAt(i));
+        }
     }
 }
