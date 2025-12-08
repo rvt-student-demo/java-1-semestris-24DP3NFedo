@@ -31,7 +31,7 @@ class OnlyTheseNumbers {
 class ListSize {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        ArrayList<String> numbers = new ArrayList<>();
+        ArrayList names = new ArrayList<>();
 
         while (true) {
             String input = scanner.nextLine();
@@ -40,8 +40,28 @@ class ListSize {
                 break;
             }
 
-            list.add(input);
+            names.add(input);
         }
-        System.out.println("In total: " + list.size());
+        System.out.println("In total: " + names.size());
     }
 }
+
+class OnTheList {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        ArrayList names = new ArrayList<>();
+
+        while (true) {
+            String input = scanner.nextLine();
+
+            if (input.isEmpty()) {
+                break;
+            }
+
+            names.add(input);
+        }
+        System.out.print("Search for? ");
+        String search = scanner.nextLine();
+    }
+}
+
