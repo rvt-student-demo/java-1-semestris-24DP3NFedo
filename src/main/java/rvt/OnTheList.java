@@ -1,3 +1,7 @@
+package rvt;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 class OnTheList {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -16,4 +20,3 @@ class OnTheList {
         String search = scanner.nextLine();
     }
 }
-
